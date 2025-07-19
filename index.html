@@ -13,34 +13,61 @@
             padding: 0;
         }
 
-        header,
         footer {
+            margin-left: 260px;
             background-color: #333;
             color: white;
-            padding: 1em;
+            padding: 1em 2em;
+        }
+
+        /* 왼쪽 네비게이션 바 */
+        nav {
+            width: 220px;
+            background: rgb(202, 137, 17);
+            color: white;
+            padding: 30px 20px;
+            position: fixed;
+            height: 100vh;
+        }
+
+        nav h1 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            text-align: center;
         }
 
         nav a {
+            display: block;
             color: white;
-            margin-right: 1em;
             text-decoration: none;
+            margin: 15px 0;
+            padding: 8px 12px;
+            border-radius: 6px;
+            transition: background 0.3s;
         }
 
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* 본문 영역 */
         main {
-            padding: 1em;
+            margin-left: 220px;
+            padding: 0 40px;
+            flex: 1;
         }
 
         section {
-            padding-bottom: 4em;
+            padding: 3em;
         }
 
         article {
-            padding-bottom: 2em;
+            padding: 2em;
         }
 
         aside {
             background: #f4f4f4;
-            padding: 1em;
+            padding: 3em;
         }
 
         table,
@@ -75,14 +102,12 @@
 </head>
 
 <body>
-    <header>
+    <nav>
         <h1>홍길동의 포트폴리오</h1>
-        <nav>
-            <a href="#about">소개</a>
-            <a href="#projects">프로젝트</a>
-            <a href="#contact">연락처</a>
-        </nav>
-    </header>
+        <a href="#about">소개</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락처</a>
+    </nav>
 
     <main>
         <section id="about">
